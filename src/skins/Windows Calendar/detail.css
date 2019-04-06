@@ -1,0 +1,41 @@
+/*
+	Windows Calendar
+    Skin for Windows Live Calendar Gadget
+
+    By Pavel Máca (maca.pavel@gmail.com), December 2009.
+    Copyright (C) 2009 - Pavel Máca.
+    All rights reserved.
+
+    http://wlcalendargadget.codeplex.com/
+*/
+
+body {width: 360px; margin: 0px; padding: 0px; color: black; 
+font:11px segoe ui,tahoma; padding-top:2px;}
+#background {width: 360px; height: 100%; position: absolute; z-index: -1; display: none;}
+#layout { width: 100%; margin-right:10px ; background: url('detail_top_bg.png') top left no-repeat; padding-top:17px; padding-bottom:14px}
+#topShadow {background:url(content_bg.png) repeat-x #dfdfdf ; border: 1px solid #000; border-top:none;}
+#closeButton {padding: 0px; margin: 0px; border: 0px; background: transparent; position: absolute; top: 22px; right: 25px; z-index: 999; color: black; font-weight: bold; font-family: Arial Black; font-size: 16px; cursor: pointer;}
+#linkButton {background: url('link.png') center no-repeat; height: 10px; width: 10px; text-decoration: none; position: absolute; top: -2px; right: 32px; z-index: 999; cursor: pointer;}
+
+#content {background:url(detail_footer_bg.png) no-repeat bottom left; position:relative; top:10px; left:-1px; width:350px; margin-right:-2px;}
+
+#content {padding: 10px; padding-top: 7px; color: #000; }
+#content a {color: #000; text-decoration: underline;}
+#content p {margin: 0px; padding-left: 70px; margin-bottom: 5px;}
+#content hr {height: 1px; color: gray; margin: 0px; padding: 0px; }
+#content span.label {font-weight: bold; margin-left: -70px; color: black; width:80px; }
+#content span.date {}
+#content span.eventTime {font-weight: bold; font-size: 14px; color: black;}
+#content span.repetation {margin-left: 5px; color: black; font-style:italic}
+#content a#showOnMap {background: url('showOnMap.png') center no-repeat; height: 10px; width: 10px; margin-left: 2px; text-decoration: none;}
+#content .description
+{
+	width: 315px; height: 100px; overflow: auto; padding-right: 5px; margin-top: 0px;
+	scrollbar-track-color: #ececec;
+	scrollbar-face-color: #cfcfcf;
+	scrollbar-highlight-color: #f5f5f5;
+	scrollbar-3dlight-color: #eeeeee;
+	scrollbar-darkshadow-color: #dedede;
+	scrollbar-shadow-color: #e5e5e5;
+	scrollbar-arrow-color: #000;
+}

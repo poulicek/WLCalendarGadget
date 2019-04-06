@@ -1,0 +1,103 @@
+/*
+	Midnight
+    Skin for Windows Live Calendar Gadget
+
+    By Zbynek Poulicek (poulicek@gmail.com), October 2009.
+    Copyright (C) 2009 - Zbynek Poulicek.
+    All rights reserved.
+
+    http://wlcalendargadget.codeplex.com/
+*/
+
+body {width: 180px; background: url('bkgDefault.png'); margin: 0px; padding: 0px; font-size: 12px; font-family: Segoe UI, Tahoma; color: white;}
+button {background: none; border: none; cursor: pointer; padding: 0px; margin: 0px; color: #67788A; font-size: 10px;}
+
+#background {width: 100%; height: 100%; position: absolute; z-index: -1; display: none;}
+#layout {background: url('bkg.png') right repeat-y;}
+#topShadow {background: url('topShadow.png') repeat-x;}
+#content {background: url('ilu.png') bottom left no-repeat; border: 2px ridge #414B56; width: 100%; height: 58px; padding-bottom: 2px;}
+
+#eventList div#eventListContent a * {cursor: pointer;}
+#eventList div#eventListContent a.event {display: block; padding: 0px 4px 0px 5px; margin-bottom: 2px; text-decoration: none; z-index: 999; position: relative; line-height: 16px;}
+/*#eventList div#eventListContent a:hover {background: #c0c0c0;}*/
+#eventList div#eventListContent a.futureEvent {color: #e0e0e0;}
+#eventList div#eventListContent a.todayEvent {color: white;}
+#eventList div#eventListContent a.activeEvent {color: white; font-weight: bold;}
+#eventList div#eventListContent a.repeatingEvent {background: url('repeatingEvent.png') 3px bottom no-repeat;}
+#eventList div#eventListContent div.summary {width: 100%; margin-right: 2px; white-space: nowrap; overflow: hidden;}
+#eventList div#eventListContent div.eventDate {text-align: right; font-size: 80%; font-style: italic; color: #67788A; font-weight: normal;}
+#eventList div#eventListContent div.message {font-style: italic; color: gray; padding: 5px;}
+#eventList div#eventListContent div.message a {color: #67788A; text-decoration: underline; display: inline; padding: 0px;}
+#eventList div#eventListContent div.eventCategory {display: block !important; color: #c0c0c0; font-weight: bold; background: url('bkgShadow.png'); text-align: center; line-height: 180%;}
+#eventList div#eventListContent div.eventDate span.eventDatePart {margin-right: 2px;}
+#eventList div#eventListContent div.eventDate span.eventTimePart {display: inline !important;}
+
+#eventList table#eventListNavigation {width: 100%;}
+#eventList table#eventListNavigation td {text-align: center;}
+#eventList table#eventListNavigation td button {height: 18px; font-size: 120%; color: #414B56;}
+#eventList table#eventListNavigation .navigationUpInactive {display: none;}
+#eventList table#eventListNavigation .navigationDownInactive {display: none;}
+#eventList .eventProgressBar {position: absolute; left: 1px; margin-top: 26px; font-size: 1px; height: 1px; border-bottom: 6px ridge #414B56;}
+
+/*
+div.eventColor {position: absolute; right: 5px; height: 4px; width: 4px; margin-top: 6px; font-size: 1px;}
+div.eventColor1 {background: red;}
+div.eventColor2 {background: blue;}
+div.eventColor3 {background: green;}
+div.eventColor4 {background: yellow;}
+div.eventColor5 {background: cyan;}
+div.eventColor6 {background: azure;}
+div.eventColor7 {background: brown;}
+div.eventColor8 {background: oragne;}
+div.eventColor9 {background: magenta;}
+div.eventColor10 {background: pink;}
+*/
+
+
+div.eventColor {position: absolute; width: 100%; height: 34px; background-repeat: no-repeat; background-position: left bottom;}
+div.eventColor1 {background-image: url('EventColors/1.png');}
+div.eventColor2 {background-image: url('EventColors/2.png');}
+div.eventColor3 {background-image: url('EventColors/3.png');}
+div.eventColor4 {background-image: url('EventColors/4.png');}
+div.eventColor5 {background-image: url('EventColors/5.png');}
+div.eventColor6 {background-image: url('EventColors/1.png');}
+div.eventColor7 {background-image: url('EventColors/2.png');}
+div.eventColor8 {background-image: url('EventColors/3.png');}
+div.eventColor9 {background-image: url('EventColors/4.png');}
+a.eventRegular {font-weight: normal !important; font-style: italic; color: #a0a0a0 !important; font-size: 90% !important; line-height: 32px !important;}
+a.eventRegular .eventDate {visibility: hidden; display: none;}
+
+#notices {color: red; padding: 2px;}
+#notices a {cursor: pointer; color: red; display: block; font-style: italic; padding-bottom: 5px;}
+#notices span.dismiss {position: absolute; right: 4px; cursor: pointer; font-weight: bold; padding-top: 1px;}
+
+table {width: 100%; font-size: 12px;}
+td {padding: 0px; width: 20px; height: 20px; vertical-align: middle;}
+thead tr.headings td {font-size: 80%; font-weight: bold; text-align: center; color: #c0c0c0;}
+tbody td {text-align: right; padding-right: 4px; border: 0px; color: #e0e0e0;}
+tbody td a {text-decoration: none; color: #e0e0e0; display: block;}
+tbody td.event {color: white; font-weight: bold; background: #67788A; border: 1px dotted #67788A; padding: 0px; padding-right: 1px;}
+tbody td.event a {color: white;}
+tbody td.oldEvent {color: #e0e0e0; background: #485460; border: 1px dotted #384149; padding: 0px; padding-right: 1px;}
+tbody td.oldEvent a {color: #e0e0e0;}
+tbody td.today {color: white; background: #BC7100; border: 1px dotted #BC7100; padding: 0px; padding-right: 1px;}
+tbody td.today a {color: white !important;}
+tbody td.activeDate {color: white; border: 1px solid #b0b0b0 !important; padding: 0px; padding-right: 1px;}
+tbody td.activeDate a {color: white;}
+
+#preview {margin-bottom: 5px;}
+#preview tbody td.today {border: 1px dotted #BC7100; background: #BC7100;}
+
+div#nameDay {margin: 4px 4px 8px 0px; text-align: right;}
+div#nameDay span#nameDayLabel {display: none; color: #909090; font-size: 80%; margin-right: 4px;}
+
+#calendar {padding-bottom: 4px;}
+#calendar span#year {color: gray; margin-left: 5px;}
+#calendar td#calendarNavigation {text-align: center; padding-top: 4px;}
+#calendar td#calendarNavigation button {height: 18px; line-height: 18px;}
+#calendar td#calendarNavigation button#backward {float: left; padding-left: 5px; font-size: 120%;}
+#calendar td#calendarNavigation button#forward {float: right; padding-right: 5px; font-size: 120%;}
+#calendar td#calendarNavigation span#month {color: #e0e0e0; font-weight: bold;}
+#calendar tbody td.weekNumber {text-align: right; font-size: 80%; color: #707070; padding: 0px; padding-right: 4px; border: 0px;}
+#calendar tbody td.previousMonth, #calendar tbody td.nextMonth {color: #67788A !important; background: none !important;}
+#calendar tbody td.previousMonth a, #calendar tbody td.nextMonth a {color: #67788A !important;}

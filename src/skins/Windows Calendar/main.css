@@ -1,0 +1,79 @@
+/*
+	Windows Calendar
+    Skin for Windows Live Calendar Gadget
+
+    By Pavel Máca (maca.pavel@gmail.com), December 2009.
+    Copyright (C) 2009 - Pavel Máca.
+    All rights reserved.
+
+    http://wlcalendargadget.codeplex.com/
+*/
+
+body {width: 142px;  margin: 0px; padding: 0px; color: black; 
+font:10px segoe ui,tahoma;}
+button {background: none; border: none; cursor: pointer; padding: 0px; margin: 0px; color: #414B56; font-size: 10px;}
+
+
+#background { width:100%; height:100%; display:none}
+#layout {/*background: url('calendar_single.png') right repeat-y; padding-top:17px*/ padding-bottom:7px}
+#topShadow {background: no-repeat url('top_bg2.png'); padding-top:17px;}
+#content {background:url(content_bg.png) repeat-x #dfdfdf ; border: 1px solid #000 !important; border-top:none; width: 100%; height: 58px;}
+
+#calendar	{ padding:0 5px 2px 5px; width:135px}
+
+#eventList	{ background:url(footer_bg.png) no-repeat bottom left; position:relative; top:7px; left:-1px; margin-top:-7px; width:143px; margin-right:-3px; padding:0 5px}
+
+#eventList div#eventListContent a * {cursor: pointer;}
+#eventList div#eventListContent a.event {display: block; padding: 2px 2px 2px 3px; text-decoration: none;}
+/*#eventList div#eventListContent a:hover {background: #c0c0c0;}*/
+#eventList div#eventListContent a.futureEvent {color: #000; font-weight:bold}
+#eventList div#eventListContent a.todayEvent {color: #000; font-weight:bold}
+#eventList div#eventListContent a.activeEvent {color: #000; font-weight: bold;}
+#eventList div#eventListContent a.repeatingEvent {background: url('repeatingEvent.png') 3px 16px no-repeat; padding-bottom:7px}
+#eventList div#eventListContent div.summary {width: 100%; margin-right: 2px; white-space: nowrap; overflow: hidden;}
+#eventList div#eventListContent div.eventDate {text-align: right; font-size: 10px; font-style: italic; color: #67788A; font-weight: normal;}
+#eventList div#eventListContent div.message {font-style: italic; color: gray; padding: 5px;}
+#eventList div#eventListContent div.message a {color: #67788A; text-decoration: underline; display: inline; padding: 0px;}
+#eventList table#eventListNavigation {width: 100%;}
+#eventList table#eventListNavigation td {text-align: center;}
+#eventList table#eventListNavigation .navigationUpInactive {display: none;}
+#eventList table#eventListNavigation .navigationDownInactive {display: none;}
+#eventList .eventProgressBar {position: absolute; left: 0px; margin-top: 12px; font-size: 1px; height: 1px; border-bottom:2px ridge #000;}
+
+#notices {color: red; padding: 2px;}
+#notices a {cursor: pointer; color: red; display: block; font-style: italic; padding-bottom: 5px;}
+#notices span.dismiss {position: absolute; right: 4px; cursor: pointer; font-weight: bold; padding-top: 1px;}
+
+table {width: 100%;}
+td {padding: 0px; width: 20px;}
+thead tr.headings td {font-size: 10px; font-weight: bold; text-align: center; color: #414B56; border-right:1px  solid; border-right-color: #dfdfdf !important}
+tbody td {text-align: right; font-size: 10px; padding: 1px; padding-right: 2px; border: 0px; color: #000;  border-right:1px  solid; border-right-color: #dfdfdf !important}
+#day6, #day13, #day20, #day27, #day34, #day41, #heading6  { border-right:none}
+tbody td a {text-decoration: none; color: #000; display: block;}
+tbody td a:hover	{ color:#ff6400;}
+tbody td.event {color: black; font-weight: bold;  padding: 0px; padding-right: 2px;}
+tbody td.event a {color: black;}
+tbody td.oldEvent {color: #000; font-weight:bold;  padding: 0px; padding-right: 2px;}
+tbody td.oldEvent a {color: #000;}
+tbody td.today {background:#ff6400;color:black; padding: 0px; padding-right:2px; font-weight:bold}
+tbody td.today a {color: white !important; }
+tbody td.today a:hover {color: white !important;}
+tbody td.activeDate {color: #ff6400; padding: 0px; padding-right: 2px;}
+tbody td.activeDate a {color: #ff6400;}
+
+#preview {margin-bottom: 5px;}
+#preview tbody td.today { background: #ff6400; color: #FFF; font-weight:bold}
+
+div#nameDay {margin: 2px 2px 0px 3px; font-size: 11px; text-align: right; padding-bottom:5px}
+div#nameDay span#nameDayLabel {font-style: italic; color: #414B56; font-size: 10px;}
+
+#calendar {padding-bottom: 2px; font-size: 12px;}
+#calendar span#year {color: black; font-size: 12px; margin-left: 5px;}
+#calendar td#calendarNavigation {text-align: center; line-height: 14px; padding-top: 4px;}
+#calendar td#calendarNavigation button {height: 14px; line-height: 14px;}
+#calendar td#calendarNavigation button#backward {float: left; padding-left: 5px;}
+#calendar td#calendarNavigation button#forward {float: right; padding-right: 5px;}
+#calendar td#calendarNavigation span#month {font-size: 12px; color: black; font-weight: bold;}
+#calendar tbody td.weekNumber {text-align: left; font-size: 8px; color: #414B56; line-height: 12px; padding: 0px; padding-left: 1px; border: 0px;}
+#calendar tbody td.previousMonth, #calendar tbody td.nextMonth {color: #c0c0c0 !important; background: none !important;}
+#calendar tbody td.previousMonth a, #calendar tbody td.nextMonth a {color: #c0c0c0 !important;}

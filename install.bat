@@ -1,0 +1,1 @@
+xcopy Src "%USERPROFILE%\AppData\Local\Microsoft\Windows Sidebar\Gadgets\WLCalendar.Gadget" /E /I

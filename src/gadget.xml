@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<gadget>
+	<name>Windows Live Calendar Gadget</name>
+	<version>1.0.0.1</version>
+	<author name="Zbyněk Poulíček">
+		<info url="http://wlcalendargadget.codeplex.com/" text="Homepage"/>
+	</author>
+	<copyright>© 2009</copyright>
+	<description>Displays events from calendar services providing data in iCal format.</description>
+	<icons>
+		<icon height="113" width="99" src="icon.png"/>
+	</icons>
+	<hosts>
+		<host name="sidebar">
+			<autoscaleDPI>true</autoscaleDPI>
+			<base type="HTML" apiVersion="1.0.0" src="wlCalendar.html"/>
+			<permissions>Full</permissions>
+			<platform minPlatformVersion="1.0"/>
+			<!-- <defaultImage src="drag.png"/> -->
+		</host>
+	</hosts>
+</gadget>

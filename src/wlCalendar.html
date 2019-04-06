@@ -1,0 +1,88 @@
+<html>
+<!--
+    Windows Live Calendar Gadget
+    Gadget for displaying of calendars in ical format.
+
+    By Zbynek Poulicek (poulicek@gmail.com), October 2009.
+    Copyright (C) 2009 - Zbynek Poulicek.
+    All rights reserved.
+
+    http://wlcalendargadget.codeplex.com/
+-->
+	<head>
+	    <meta http-equiv="Content-Type" content="text/html; charset=Unicode" />
+    	<title>Windows Live Calednar Gadget</title>
+    	<script src="wlCalendar.lang.js" type="text/javascript"></script>
+    	<script src="js/nameDays.js" type="text/javascript"></script>
+    	<script src="js/wlCalendar.js" type="text/javascript"></script>
+    	<script src="js/iCalReader.js" type="text/javascript"></script>
+    	
+		<script type="text/vbscript" language="VBscript">
+			'Shows a message
+			Function vbsAlert(vbContent, vbIcon, vbTitle)
+				MsgBox vbContent, vbIcon, vbTitle
+			End Function
+		
+			'Returns true if first day of week is Monday
+			Function vbsFirstDayOfWeekIsMon()
+			    vbsFirstDayOfWeekIsMon = (WeekDay(DateSerial(2009, 9, 13), 0) = 7)
+			End Function
+
+			'Gets month name
+			Function vbsMonthName(vbMonthIndex)
+			    vbsMonthName = MonthName(vbMonthIndex)
+			End Function
+
+			'Gets day of week name
+			Function vbsWeekDayName(vbDayIndex)
+			    vbsWeekDayName = WeekDayName(vbDayIndex + 1, true)
+			End Function
+
+			'Gets day of week name
+			Function vbsWeekNumber(vbYear, vbMonth, vbDay)
+			    vbsWeekNumber = DatePart("ww", DateSerial(vbYear, vbMonth, vbDay), 0)
+			End Function
+		</script>
+	</head>
+
+	<body class="main" onload="onLoadGadget()">
+		<g:background id="background"></g:background>
+		<div id="layout">
+	  		<div id="topShadow">
+			    <div id="content">
+			        <div id="calendar">
+					    <table cellspacing="0" cellpadding="0">
+					        <thead>
+						        <tr><td colspan="8" id="calendarNavigation"><button onclick="drawCalendar(-1)" onfocus="this.blur()" id="backward"><span>◄</span></button><button onclick="drawCalendar(1)" onfocus="this.blur()" id="forward"><span>►</span></button><span id="month">Month</span><span id="year"></span></td></tr>
+						        <tr class="headings"><td class="weekNumber"></td><td id="heading0"></td><td id="heading1"></td><td id="heading2"></td><td id="heading3"></td><td id="heading4"></td><td id="heading5"></td><td id="heading6"></td></tr>
+					        </thead>
+					        <tbody>
+						        <tr><td class="weekNumber"><span id="weekNumber0"></span></td><td id="day0"></td><td id="day1"></td><td id="day2"></td><td id="day3"></td><td id="day4"></td><td id="day5"></td><td id="day6"></td></tr>
+						        <tr><td class="weekNumber"><span id="weekNumber1"></span></td><td id="day7"></td><td id="day8"></td><td id="day9"></td><td id="day10"></td><td id="day11"></td><td id="day12"></td><td id="day13"></td></tr>
+						        <tr><td class="weekNumber"><span id="weekNumber2"></span></td><td id="day14"></td><td id="day15"></td><td id="day16"></td><td id="day17"></td><td id="day18"></td><td id="day19"></td><td id="day20"></td></tr>
+						        <tr><td class="weekNumber"><span id="weekNumber3"></span></td><td id="day21"></td><td id="day22"></td><td id="day23"></td><td id="day24"></td><td id="day25"></td><td id="day26"></td><td id="day27"></td></tr>
+						        <tr><td class="weekNumber"><span id="weekNumber4"></span></td><td id="day28"></td><td id="day29"></td><td id="day30"></td><td id="day31"></td><td id="day32"></td><td id="day33"></td><td id="day34"></td></tr>
+						        <tr id="lastRow"><td class="weekNumber"><span id="weekNumber5"></span></td><td id="day35"></td><td id="day36"></td><td id="day37"></td><td id="day38"></td><td id="day39"></td><td id="day40"></td><td id="day41"></td></tr>
+					        </tbody>
+					    </table>
+				    </div>
+			    	<div id="eventList">
+					    <table cellspacing="0" cellpadding="0" id="preview">
+					    	<thead>
+						        <tr class="headings"><td id="previewHeading0"></td><td id="previewHeading1"></td><td id="previewHeading2"></td><td id="previewHeading3"></td><td id="previewHeading4"></td><td id="previewHeading5"></td><td id="previewHeading6"></td></tr>
+					        </thead>
+					        <tbody>
+					        	<tr><td id="previewDay0"></td><td id="previewDay1"></td><td id="previewDay2"></td><td id="previewDay3"></td><td id="previewDay4"></td><td id="previewDay5"></td><td id="previewDay6"></td></tr>
+		           			</tbody>
+					    </table>
+					    <div id="nameDay"></div>
+					    <div id="notices" style="display: none"></div>
+						<div id="eventListContent"></div>
+						<table id="eventListNavigation" cellspacing="0" cellpadding="0"><tr><td id="eventListNavigationUp" class="navigationUpInactive"><button onclick="onSlideEventsUp()" onfocus="this.blur()"><span>▲</span></button></td><td id="eventListNavigationDown" class="navigationDownInactive"><button onclick="onSlideEventsDown()" onfocus="this.blur()"><span>▼</span></button></td></tr></table>
+					</div>
+		    	</div>
+	    	</div>
+    	</div>
+	</body>
+</html>
+

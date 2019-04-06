@@ -1,0 +1,26 @@
+﻿<Window x:Class="WLCalendarReminder.Reminder"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Windows Live Calendar Gadget" Height="147.667" Width="406.167" Background="{x:Null}" ResizeMode="NoResize" WindowStyle="None" AllowsTransparency="True" Icon="Icon.ico" Foreground="White" ShowActivated="False">
+    <Grid MouseLeftButtonDown="dragMove">
+        <Rectangle RadiusX="14.833" RadiusY="14.833" Margin="60.333,27.333,8,8" Stroke="#FF242424" >
+        	<Rectangle.Effect>
+        		<DropShadowEffect/>
+        	</Rectangle.Effect>
+        	<Rectangle.Fill>
+        		<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+        			<GradientStop Color="#BF000000" Offset="0.767"/>
+        			<GradientStop Color="#58000000" Offset="1"/>
+        		</LinearGradientBrush>
+        	</Rectangle.Fill>
+        </Rectangle>
+        <Button Height="23" Margin="193.167,110,134.167,0" x:Name="btnOk" VerticalAlignment="Top" Content="OK" Background="#FF161616" BorderBrush="Black" Click="btnOk_Click" />
+    	<ProgressBar x:Name="progressBar" Margin="72.5,93,21,0" VerticalAlignment="Top" Height="10"/>
+    	<TextBlock x:Name="tbSummary" Margin="117,41.581,19,0" VerticalAlignment="Top" Height="21.419" Text="" TextWrapping="Wrap" FontWeight="Bold" />
+    	<TextBlock x:Name="tbStart" Margin="117,67,67.707,0" TextWrapping="NoWrap" TextAlignment="Center" VerticalAlignment="Top" Height="26"/>
+    	<Image HorizontalAlignment="Left" Width="113" Source="Icon.png" Stretch="Fill" VerticalAlignment="Top" Height="99"/>
+    	<Button HorizontalAlignment="Right" Margin="0,32.581,19,0" VerticalAlignment="Top" Width="30" Height="16.875" Background="#FF161616" BorderBrush="Black" Click="btnMinimize_Click">
+    		<Path Fill="Black" Stretch="Fill" Stroke="White" Margin="0,0,0,-5" VerticalAlignment="Bottom" Width="12.083" Height="2.083" Data="M4.5,11.645 L18.75,11.645" StrokeThickness="2"/>
+    	</Button>
+    </Grid>
+</Window>

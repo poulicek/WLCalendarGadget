@@ -1,0 +1,66 @@
+<html>
+<!--
+    Windows Live Calendar Gadget
+    Gadget for displaying of calendars in ical format.
+
+    By Zbynek Poulicek (poulicek@gmail.com), October 2009.
+    Copyright (C) 2009 - Zbynek Poulicek.
+    All rights reserved.
+
+    http://wlcalendargadget.codeplex.com/
+-->
+	<head>    
+		<meta http-equiv="Content-Type" content="text/html; charset=Unicode" />    
+		<title>Window Live Calendar Gadget</title>
+		<script src="wlCalendar.lang.js" type="text/javascript"></script>
+		<script src="js/wlCalendar.js" type="text/javascript"></script>
+		<style type="text/css">
+			body {width: 278px; height: 380px;}
+			p {clear: both; text-align: right; margin: 0px; padding: 0px; margin-top: 5px;}
+			p label {float: left; text-align: left; margin-bottom: 5px; padding-top: 4px;}
+			#sources {clear: both; width: 100%; height: 90px;}
+			#updateInterval {text-align: right; width: 50px;}
+			#limit {text-align: right; width: 50px;}
+			#limitDays {text-align: right; width: 50px;}
+			#skins {width: 180px;}
+			#alarmSound {font-size: 10px; color: #444444; margin-top: 4px;}
+			#link {text-align: center; margin: 0px;}
+			#link a {color: blue;}
+		</style>
+	</head>     
+	<body onload="onLoadSettings()">
+	    <p>
+		    <label id="sourcesLabel" for="sources"></label>
+			<textarea id="sources" wrap="off"></textarea>
+			<input id="localFile" type="file" onchange="sources.innerText += (sources.innerText.length ? '\n' : '') + this.value" />
+		</p>
+		<p>
+			<label id="updateIntervalLabel" for="updateInterval"></label>
+			<input id="updateInterval" />
+		</p>
+		<p>
+			<label id="limitLabel" for="limit"></label>
+			<input id="limit" />
+		</p>
+		<p>
+			<label id="limitDaysLabel" for="limitDays"></label>
+			<input id="limitDays" />
+		</p>
+		<p>
+			<label id="skinsLabel" for="skins"></label>
+			<select id="skins"></select>
+		</p>
+		<p>
+			<label id="reminderLabel" for="skins"></label>
+			<input id="reminder" type="checkbox" />
+		</p>
+		<p>
+			<label id="alarmSoundLabel" for="alarmSound"></label>
+			<input id="alarmSoundButton" type="file" onchange="alarmSound.innerText = this.value" />
+			<div id="alarmSound"></div>
+        </p>
+        <p id="link">
+			<a href="http://wlcalendargadget.codeplex.com/">wlcalendargadget.codeplex.com</a>&nbsp;::&nbsp;<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=K89SHUV6EU49A&lc=CZ&item_name=WL%20Calendar%20Gadget&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted">donate</a>
+		</p>
+	</body>
+</html>

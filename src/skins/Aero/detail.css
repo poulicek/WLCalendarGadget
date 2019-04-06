@@ -1,0 +1,41 @@
+/*
+	Aero
+    Skin for Windows Live Calendar Gadget
+
+    By Zbynek Poulicek (poulicek@gmail.com), October 2009.
+    Copyright (C) 2009 - Zbynek Poulicek.
+    All rights reserved.
+
+    http://wlcalendargadget.codeplex.com/
+
+	!!!!!!! TO GET PROPER VALUES OF COLOR VARIABLES (gDarkestColor, gDarkerColor, ...) THE NAME OF SKIN (NAME OF FOLDER) MUST START WITH "aero" !!!!!!!
+*/
+
+body {width: 350px; margin: 0px; padding: 0px; font-size: 12px; font-family: Calibri, Tahoma; color: white;}
+
+#background {width: 350px; height: 100%; position: absolute; z-index: -1; display: none;}
+#layout {border: 1px solid; border-color: expression(gLighterColor); width: 100%; background-color: expression(gBaseColor); margin-right: 5px; margin-left: 5px;}
+#topShadow {background: url('topShadow.png') repeat-x;}
+#closeButton {padding: 0px; margin: 0px; border: 0px; background: transparent; position: absolute; top: 2px; right: 12px; z-index: 999; color: #67788A; font-weight: bold; font-family: Arial Black; font-size: 18px; cursor: pointer;}
+#linkButton {background: url('link.png') center no-repeat; height: 10px; width: 10px; text-decoration: none; position: absolute; top: 8px; right: 28px; z-index: 999; cursor: pointer;}
+
+#content {padding: 10px; padding-top: 15px; color: expression(gDarkerColor);}
+#content a {color: expression(gDarkestColor); text-decoration: underline;}
+#content p {margin: 0px; padding-left: 70px; line-height: 20px;}
+#content hr {height: 1px; color: expression(gLighterColor); margin: 0px; padding: 0px;}
+#content span.label {font-weight: bold; position: absolute; margin-left: -70px; color: expression(gDarkestColor); margin-top: -3px;}
+#content span.date {margin-top: 5px;}
+#content span.eventTime {font-weight: bold; font-size: 20px; color: expression(gDarkestColor);}
+#content span.repetation {margin-left: 5px; color: expression(gLighterColor);}
+#content a#showOnMap {background: url('showOnMap.png') center no-repeat; height: 10px; width: 10px; margin-left: 2px; text-decoration: none;}
+#content .description
+{
+	width: 315px; height: 100px; overflow: auto; padding-right: 5px; margin-top: 20px;
+	scrollbar-track-color: expression(gBaseColor);
+	scrollbar-face-color: expression(gBaseColor);
+	scrollbar-highlight-color: expression(gLighterColor);
+	scrollbar-3dlight-color: expression(gBaseColor);
+	scrollbar-darkshadow-color: expression(gBaseColor);
+	scrollbar-shadow-color: expression(gLighterColor);
+	scrollbar-arrow-color: expression(gLighterColor);
+}

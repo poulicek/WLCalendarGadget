@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0DED4B0C-D40C-487C-9158-314EB08272AF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WLCalendarReminder</RootNamespace>
+    <AssemblyName>WLCalendarReminder</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <ExpressionBlendVersion>3.0.1927.0</ExpressionBlendVersion>
+    <NoWin32Manifest>true</NoWin32Manifest>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\src\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="Reminder.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Theme.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Reminder.xaml.cs">
+      <DependentUpon>Reminder.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Win7Api\Common\DefaultShellImageSizes.cs" />
+    <Compile Include="Win7Api\Common\EnumUnknown.cs" />
+    <Compile Include="Win7Api\Common\IconReference.cs" />
+    <Compile Include="Win7Api\Common\SearchCondition.cs" />
+    <Compile Include="Win7Api\Common\SearchConditionFactory.cs" />
+    <Compile Include="Win7Api\Common\ShellEnums.cs" />
+    <Compile Include="Win7Api\Common\ShellFile.cs" />
+    <Compile Include="Win7Api\Common\ShellFileSystemFolder.cs" />
+    <Compile Include="Win7Api\Common\ShellFolder.cs" />
+    <Compile Include="Win7Api\Common\ShellFolderItems.cs" />
+    <Compile Include="Win7Api\Common\ShellHelper.cs" />
+    <Compile Include="Win7Api\Common\ShellItemArray.cs" />
+    <Compile Include="Win7Api\Common\ShellLibrary.cs" />
+    <Compile Include="Win7Api\Common\ShellLink.cs" />
+    <Compile Include="Win7Api\Common\ShellNonFileSystemFolder.cs" />
+    <Compile Include="Win7Api\Common\ShellNonFileSystemItem.cs" />
+    <Compile Include="Win7Api\Common\ShellObject.cs" />
+    <Compile Include="Win7Api\Common\ShellObjectCollection.cs" />
+    <Compile Include="Win7Api\Common\ShellObjectContainer.cs" />
+    <Compile Include="Win7Api\Common\ShellObjectFactory.cs" />
+    <Compile Include="Win7Api\Common\ShellObjectNode.cs" />
+    <Compile Include="Win7Api\Common\ShellSavedSearchCollection.cs" />
+    <Compile Include="Win7Api\Common\ShellSearchCollection.cs" />
+    <Compile Include="Win7Api\Common\ShellSearchConnector.cs" />
+    <Compile Include="Win7Api\Common\ShellSearchFolder.cs" />
+    <Compile Include="Win7Api\Common\ShellThumbnail.cs" />
+    <Compile Include="Win7Api\Common\ShellThumbnailEnums.cs" />
+    <Compile Include="Win7Api\Common\SortColumn.cs" />
+    <Compile Include="Win7Api\Interop\CommonDllNames.cs" />
+    <Compile Include="Win7Api\Interop\Common\ShellCOMClasses.cs" />
+    <Compile Include="Win7Api\Interop\Common\ShellCOMGuids.cs" />
+    <Compile Include="Win7Api\Interop\Common\ShellCOMInterfaces.cs" />
+    <Compile Include="Win7Api\Interop\Common\ShellNativeMethods.cs" />
+    <Compile Include="Win7Api\Interop\Common\WindowUtilities.cs" />
+    <Compile Include="Win7Api\Interop\CoreErrorHelper.cs" />
+    <Compile Include="Win7Api\Interop\CoreHelpers.cs" />
+    <Compile Include="Win7Api\Interop\CoreNativeMethods.cs" />
+    <Compile Include="Win7Api\Interop\KnownFolders\KnownFoldersCOMGuids.cs" />
+    <Compile Include="Win7Api\Interop\KnownFolders\KnownFoldersCOMInterfaces.cs" />
+    <Compile Include="Win7Api\Interop\KnownFolders\KnownFoldersNativeMethods.cs" />
+    <Compile Include="Win7Api\Interop\PropertySystem\PropertySystemCOMInterfaces.cs" />
+    <Compile Include="Win7Api\Interop\PropertySystem\PropertySystemNativeMethods.cs" />
+    <Compile Include="Win7Api\Interop\StockIcons\StockIconsNativeMethods.cs" />
+    <Compile Include="Win7Api\Interop\Taskbar\TabbedThumbnailNativeMethods.cs" />
+    <Compile Include="Win7Api\Interop\Taskbar\TaskbarCOMInterfaces.cs" />
+    <Compile Include="Win7Api\Interop\Taskbar\TaskbarNativeMethods.cs" />
+    <Compile Include="Win7Api\KnownFolders\DefinitionOptions.cs" />
+    <Compile Include="Win7Api\KnownFolders\FileSystemKnownFolder.cs" />
+    <Compile Include="Win7Api\KnownFolders\FolderCategory.cs" />
+    <Compile Include="Win7Api\KnownFolders\FolderProperties.cs" />
+    <Compile Include="Win7Api\KnownFolders\FoldersIdentifiers.cs" />
+    <Compile Include="Win7Api\KnownFolders\FolderTypes.cs" />
+    <Compile Include="Win7Api\KnownFolders\IKnownFolder.cs" />
+    <Compile Include="Win7Api\KnownFolders\KnownFolderHelper.cs" />
+    <Compile Include="Win7Api\KnownFolders\KnownFolders.cs" />
+    <Compile Include="Win7Api\KnownFolders\KnownFolderSettings.cs" />
+    <Compile Include="Win7Api\KnownFolders\NonFileSystemKnownFolder.cs" />
+    <Compile Include="Win7Api\KnownFolders\RedirectionCapabilities.cs" />
+    <Compile Include="Win7Api\KnownFolders\RetrievalOptions.cs" />
+    <Compile Include="Win7Api\PropertySystem\IShellProperty.cs" />
+    <Compile Include="Win7Api\PropertySystem\PropertyKey.cs" />
+    <Compile Include="Win7Api\PropertySystem\PropVariant.cs" />
+    <Compile Include="Win7Api\PropertySystem\PropVariantNativeMethods.cs" />
+    <Compile Include="Win7Api\PropertySystem\ShellProperties.cs" />
+    <Compile Include="Win7Api\PropertySystem\ShellProperty.cs" />
+    <Compile Include="Win7Api\PropertySystem\ShellPropertyCollection.cs" />
+    <Compile Include="Win7Api\PropertySystem\ShellPropertyDescription.cs" />
+    <Compile Include="Win7Api\PropertySystem\ShellPropertyDescriptionsCache.cs" />
+    <Compile Include="Win7Api\PropertySystem\ShellPropertyEnums.cs" />
+    <Compile Include="Win7Api\PropertySystem\ShellPropertyEnumType.cs" />
+    <Compile Include="Win7Api\PropertySystem\ShellPropertyWriter.cs" />
+    <Compile Include="Win7Api\PropertySystem\StronglyTypedProperties.cs" />
+    <Compile Include="Win7Api\PropertySystem\SystemProperties.cs" />
+    <Compile Include="Win7Api\PropertySystem\WindowProperties.cs" />
+    <Compile Include="Win7Api\StockIcons\StockIcon.cs" />
+    <Compile Include="Win7Api\StockIcons\StockIconEnums.cs" />
+    <Compile Include="Win7Api\StockIcons\StockIcons.cs" />
+    <Compile Include="Win7Api\Taskbar\ProgressBarStateSettings.cs" />
+    <Compile Include="Win7Api\Taskbar\TabbedThumbnail.cs" />
+    <Compile Include="Win7Api\Taskbar\TabbedThumbnailBitmapRequestedEventArgs.cs" />
+    <Compile Include="Win7Api\Taskbar\TabbedThumbnailEventArgs.cs" />
+    <Compile Include="Win7Api\Taskbar\TabbedThumbnailManager.cs" />
+    <Compile Include="Win7Api\Taskbar\TabbedThumbnailProxyWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Win7Api\Taskbar\TabbedThumbnailScreenCapture.cs" />
+    <Compile Include="Win7Api\Taskbar\TaskbarEnums.cs" />
+    <Compile Include="Win7Api\Taskbar\TaskbarInterfaces.cs" />
+    <Compile Include="Win7Api\Taskbar\TaskbarManager.cs" />
+    <Compile Include="Win7Api\Taskbar\TaskbarWindow.cs" />
+    <Compile Include="Win7Api\Taskbar\TaskbarWindowManager.cs" />
+    <Compile Include="Win7Api\Taskbar\ThumbnailButton.cs" />
+    <Compile Include="Win7Api\Taskbar\ThumbnailButtonClickedEventArgs.cs" />
+    <Compile Include="Win7Api\Taskbar\ThumbnailToolbarManager.cs" />
+    <Compile Include="Win7Api\Taskbar\ThumbnailToolbarProxyWindow.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

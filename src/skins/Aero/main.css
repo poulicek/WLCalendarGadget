@@ -1,0 +1,71 @@
+/*
+	Aero
+    Skin for Windows Live Calendar Gadget
+
+    By Zbynek Poulicek (poulicek@gmail.com), October 2009.
+    Copyright (C) 2009 - Zbynek Poulicek.
+    All rights reserved.
+
+    http://wlcalendargadget.codeplex.com/
+    
+	!!!!!!! TO GET PROPER VALUES OF COLOR VARIABLES (gDarkestColor, gDarkerColor, ...) THE NAME OF SKIN (NAME OF FOLDER) MUST START WITH "aero" !!!!!!!
+*/
+
+body {width: 144px; margin: 0px; padding: 0px; font-size: 12px; font-family: Calibri, Tahoma; color: white;}
+button {background: none; border: none; cursor: pointer; padding: 0px; margin: 0px; color: expression(gLighterColor); font-size: 10px;}
+
+#background {width: 100%; height: 100%; position: absolute; z-index: -1; display: none;}
+#layout {background-color: expression(gBaseColor);}
+#topShadow {background: url('topShadow.png') repeat-x;}
+#content {border: 1px solid; border-color: expression(gLighterColor); width: 100%; height: 58px; background: url('ilu.png') bottom left no-repeat; padding-bottom: 2px;}
+
+#eventList div#eventListContent a * {cursor: pointer;}
+#eventList div#eventListContent a.event {display: block; padding: 2px 2px 2px 3px; text-decoration: none;}
+/*#eventList div#eventListContent a:hover {background: expression(gDarkestColor);}*/
+#eventList div#eventListContent a.futureEvent {color: expression(gDarkerColor);}
+#eventList div#eventListContent a.todayEvent {color: expression(gDarkestColor);}
+#eventList div#eventListContent a.activeEvent {color: expression(gDarkestColor); font-weight: bold;}
+#eventList div#eventListContent a.repeatingEvent {background: url('repeatingEvent.png') 3px 16px no-repeat;}
+#eventList div#eventListContent div.summary {width: 100%; margin-right: 2px; white-space: nowrap; overflow: hidden;}
+#eventList div#eventListContent div.eventDate {text-align: right; font-size: 80%; font-style: italic; color: expression(gDarkerColor); font-weight: normal;}
+#eventList div#eventListContent div.message {font-style: italic; color: expression(gDarkestColor); padding: 5px;}
+#eventList div#eventListContent div.message a {color: expression(gDarkestColor); text-decoration: underline; display: inline; padding: 0px;}
+#eventList table#eventListNavigation {width: 100%;}
+#eventList table#eventListNavigation td {text-align: center;}
+#eventList table#eventListNavigation .navigationUpInactive {display: none;}
+#eventList table#eventListNavigation .navigationDownInactive {display: none;}
+#eventList .eventProgressBar {position: absolute; left: 1px; margin-top: 11px; font-size: 1px; height: 1px; border-bottom: 2px ridge; border-color: expression(gLightestColor);}
+
+#notices {color: expression(gInvertedColor); padding: 2px;}
+#notices a {cursor: pointer; color: expression(gInvertedColor); display: block; font-style: italic; padding-bottom: 5px;}
+#notices span.dismiss {position: absolute; right: 4px; cursor: pointer; font-weight: bold; padding-top: 1px;}
+
+table {width: 100%;}
+td {padding: 0px; width: 20px;}
+thead tr.headings td {font-size: 11px; font-weight: bold; text-align: center; color: expression(gDarkestColor);}
+tbody td {text-align: right; font-size: 12px; padding: 1px; padding-right: 2px; border: 0px; color: expression(gDarkestColor);}
+tbody td a {text-decoration: none; color: expression(gDarkestColor); display: block;}
+tbody td.event {color: white; font-weight: bold; background-color: expression(gDarkerColor); border: 1px dotted; border-color: expression(gDarkerColor); padding: 0px; padding-right: 1px;}
+tbody td.event a {color: white;}
+tbody td.oldEvent {color: expression(gLightestColor); background-color: expression(gLighterColor); border: 1px dotted; border-color: expression(gLighterColor); padding: 0px; padding-right: 1px;}
+tbody td.oldEvent a {color: expression(gLightestColor);}
+tbody td.today {color: white; background-color: expression(gInvertedColor); border: 1px dotted; border-color: expression(gInvertedColor); padding: 0px; padding-right: 1px;}
+tbody td.today a {color: white;}
+tbody td.activeDate {border: 1px solid; border-color: expression(gDarkestColor) !important; padding: 0px; padding-right: 1px; color: black;}
+tbody td.activeDate a {}
+
+#preview {margin-bottom: 5px;}
+
+div#nameDay {margin: 2px 2px 0px 0px; font-size: 12px; text-align: right; color: expression(gDarkerColor);}
+div#nameDay span#nameDayLabel {font-style: italic; color: expression(gLighterColor); font-size: 80%;}
+
+#calendar {padding-bottom: 2px; font-size: 12px;}
+#calendar span#year {color: gray; font-size: 12px; margin-left: 5px;}
+#calendar td#calendarNavigation {text-align: center; line-height: 14px; padding-top: 4px;}
+#calendar td#calendarNavigation button {height: 14px; line-height: 14px;}
+#calendar td#calendarNavigation button#backward {float: left; padding-left: 5px;}
+#calendar td#calendarNavigation button#forward {float: right; padding-right: 5px;}
+#calendar td#calendarNavigation span#month {font-size: 12px; color: expression(gDarkestColor); font-weight: bold;}
+#calendar tbody td.weekNumber {text-align: left; font-size: 8px; color: expression(gDarkestColor); line-height: 12px; padding: 0px; padding-left: 1px; border: 0px;}
+#calendar tbody td.previousMonth, #calendar tbody td.nextMonth {color: expression(gLighterColor) !important; background: none !important;}
+#calendar tbody td.previousMonth a, #calendar tbody td.nextMonth a {color: expression(gLighterColor) !important;}
