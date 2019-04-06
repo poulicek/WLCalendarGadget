@@ -1,9 +1,6 @@
-# WLCalendarGadget
-Desktop gadget for Windows showing calendar with events from iCalendar feeds
+# WLCalendarGadget - Free calendar on your desktop
 
-# FREE CALENDAR ON YOUR DESKTOP
-
-_Desktop calendar gadget for all Windows versions since Vista (including Windows 8). It simply displays your events from any internet calendar source (not only Windows Live). Just get an URL of your calendars, put them into the gadget and you are all set. It is great helper for having a track of your everyday tasks and upcoming deadlines.  
+_Desktop calendar gadget for Windows. It simply displays your events from any internet calendar source. Just get an URL of your calendars, put them into the gadget and you are all set. It is great helper for having a track of your everyday tasks and upcoming deadlines.  
 
 **News**
 
