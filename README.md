@@ -18,6 +18,7 @@ Requirements: Windows Vista and higher (including Windows 10)
 
 
 **TIP - Wheather Forecast**
+
 Display the wheather forecast from Wunderground.com within the gadget - e.g. http://ical.wunderground.com/auto/ical/global/stations/11032.ics?units=metric&reg.
 _(The 'reg' parameter means 'regular' and sets a special visual style to the calendar which has events appearing regularly every day - such as wheather or name days.)_
 
