@@ -15,7 +15,7 @@ Requirements: Windows Vista and higher (including Windows 10)
 4.  Click on the settings button (right side of the gadget) and put the links on your calendars into the box
 
 
-## TIP - Wheather Forecast
+### TIP - Wheather Forecast
 Display the wheather forecast from Wunderground.com within the gadget - e.g. http://ical.wunderground.com/auto/ical/global/stations/11032.ics?units=metric&reg.
 _(The 'reg' parameter means 'regular' and sets a special visual style to the calendar which has events appearing regularly every day - such as wheather or name days.)_
 
@@ -33,9 +33,9 @@ _(The 'reg' parameter means 'regular' and sets a special visual style to the cal
 
 ## Supported Calendars
 
-*   Windows Live Calendar
+*   Outlook Live Calendar
+*   Outlook exported *.ics files
 *   Google Calendar
-*   Outlook Calendar *.ics files (exported events)
 *   Yahoo Calendar
 *   Zarafa Collaboration Platform
 *   ...
