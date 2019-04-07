@@ -5,6 +5,8 @@
 
 _Desktop calendar gadget for Windows. It simply displays your events from any internet calendar source. Just get an URL of your calendars, put them into the gadget and you are all set. It is great helper for having a track of your everyday tasks and upcoming deadlines._
 
+![WLCalendarGadget](https://raw.githubusercontent.com/poulicek/WLCalendarGadget/master/docs/wlcalendargadget.jpg)
+
 ## Installation
 
 Requirements: Windows Vista and higher (including Windows 10)
