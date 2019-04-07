@@ -17,6 +17,7 @@ Requirements: Windows Vista and higher (including Windows 10)
 4.  Click on the settings button (right side of the gadget) and put the links on your calendars into the box
 
 
+
 **TIP - Wheather Forecast**
 
 Display the wheather forecast from Wunderground.com within the gadget - e.g. http://ical.wunderground.com/auto/ical/global/stations/11032.ics?units=metric&reg.
