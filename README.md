@@ -1,7 +1,7 @@
 [Download](https://github.com/poulicek/WLCalendarGadget/releases/download/v1.0/WLCalendar.Gadget) | [Donate](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=K89SHUV6EU49A&lc=CZ&item_name=WL%20Calendar%20Gadget&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted
 )
 
-# WLCalendarGadget - Free calendar on your desktop
+# WLCalendarGadget - Free Calendar on Your Desktop
 
 _Desktop calendar gadget for Windows. It simply displays your events from any internet calendar source. Just get an URL of your calendars, put them into the gadget and you are all set. It is great helper for having a track of your everyday tasks and upcoming deadlines._
 
@@ -17,7 +17,7 @@ Requirements: Windows Vista and higher (including Windows 10)
 4.  Click on the settings button (right side of the gadget) and put the links on your calendars into the box
 
 
-### TIP - Wheather Forecast
+**TIP - Wheather Forecast**
 Display the wheather forecast from Wunderground.com within the gadget - e.g. http://ical.wunderground.com/auto/ical/global/stations/11032.ics?units=metric&reg.
 _(The 'reg' parameter means 'regular' and sets a special visual style to the calendar which has events appearing regularly every day - such as wheather or name days.)_
 
