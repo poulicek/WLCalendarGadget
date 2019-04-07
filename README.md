@@ -1,20 +1,11 @@
+[Download](https://github.com/poulicek/WLCalendarGadget/releases/download/v1.0/WLCalendar.Gadget) | [Donate](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=K89SHUV6EU49A&lc=CZ&item_name=WL%20Calendar%20Gadget&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted
+)
+
 # WLCalendarGadget - Free calendar on your desktop
 
 _Desktop calendar gadget for Windows. It simply displays your events from any internet calendar source. Just get an URL of your calendars, put them into the gadget and you are all set. It is great helper for having a track of your everyday tasks and upcoming deadlines._
 
-**News**
-
-01-18-2016 - Hotfix released. In the previous version was implemented a download wrapper which extended support of calendar sources. However, the traffic has overloaded the server capacity and it started failing with response code 503\. In the hotfix the wrapper has been removed, which may cause troubles with some calendar sources, but in general should give better service reliability.
-
-01-17-2016 - After almost three years I've reviewed the working state of the gadget and finally released it's final version. Lately there were issues with data dowload, thus it's highly recommended to update to this latest version. The gadget newly includes a Russian translation.
-
-04-29-2013 - Next version is ready for release. It includes again some minor bug fixes based on your suggestions and introduces support of Polish language. Also the notification of the new version won't appear again once it's hidden. Stay tuned for this release!
-
-04-14-2013 - Just released new version implementing some bug fixes, most importantly the repeating message of availability of the new version.
-
-04-07-2013 - New version of the gadget brings many improvements. It improves the compatibility with calendar providers, repairs some bugs but most importantly it introduces a new updated look designed for big screens. It also orders the events according to dates. It is called Midnight 2, make sure you'll select it in the settings dialog of the gadget (if you are a new user, this theme is selected by default). Most of the improvements were made thanks to your suggestions and they are still highly welcomed. Thanks for keeping the project alive!
-
-**Installation**
+## Installation
 
 Requirements: Windows Vista and higher (including Windows 10)
 
@@ -23,11 +14,13 @@ Requirements: Windows Vista and higher (including Windows 10)
 3.  Run the downloaded file - the calendar should automatically appear on your desktop</div>
 4.  Click on the settings button (right side of the gadget) and put the links on your calendars into the box
 
-**TIP - Wheather Forecast**
+
+## TIP - Wheather Forecast
 Display the wheather forecast from Wunderground.com within the gadget - e.g. http://ical.wunderground.com/auto/ical/global/stations/11032.ics?units=metric&reg.
 _(The 'reg' parameter means 'regular' and sets a special visual style to the calendar which has events appearing regularly every day - such as wheather or name days.)_
 
-**Features**
+
+## Features
 *   Support of any ICAL (*.ics) calendar source
 *   Data available also offline
 *   Display of multiple calendars
@@ -37,7 +30,8 @@ _(The 'reg' parameter means 'regular' and sets a special visual style to the cal
 *   Special notification application
 *   Multiple instances supported
 
-**Supported Calendars**
+
+## Supported Calendars
 
 *   Windows Live Calendar
 *   Google Calendar
@@ -46,5 +40,5 @@ _(The 'reg' parameter means 'regular' and sets a special visual style to the cal
 *   Zarafa Collaboration Platform
 *   ...
 
-**Technology**
+## Technology
 HTML, JavaScript (Ajax), WPF (C#)
